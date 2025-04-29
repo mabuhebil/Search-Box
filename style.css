@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e94d67de;
+}
+
+.continer {
+    position: relative;
+    display: flex;
+}
+
+.continer label {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45px;
+    background-color: #ff0d6a;
+    border-radius: 0 20px 20px 0
+}
+
+.continer label i {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 10px;
+    left: 10px;
+}
+
+.continer input {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 280px;
+    border-radius: 20px;
+    color: black;
+}
+
+.continer input::placeholder {
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.continer input[type="checkbox"] {
+    display: none;
+}
+
+#check:checked~.mainInput {
+    display: none;
+}
